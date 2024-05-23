@@ -1,4 +1,5 @@
 import React from 'react'
+import SecondSection from './SecondSection'
 
 function Banner() {
   return (
@@ -20,6 +21,7 @@ function Banner() {
             <h1 className='w-fit text-5xl sm:text-[100px] tracking-widest h-fit opacity-20  font-bold texts  absolute lg:left-5 lg:-translate-x-0 left-1/2 -translate-x-1/2  bottom-0 text-transparent '>WHYTAP</h1>
 
         </div>
+        <SecondSection />
 
     </div>
   )
