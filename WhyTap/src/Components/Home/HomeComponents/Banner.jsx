@@ -2,7 +2,7 @@ import React from 'react'
 
 function Banner() {
   return (
-    <div className='w-full bg-gray-100 h-screen p-5 lg:p-0'>
+    <div className='w-full bg-gray-100 h-screen p-5 lg:p-0 '>
         <div className='w-full h-full lg:flex-row justify-center items-center relative overflow-hidden flex-col flex'>
             <div className='lg:w-[45%]   relative w-full h-full'>
               <div className='lg:w-[80%] mx-auto flex flex-col justify-center items-center lg:items-start gap-14 sm:gap-8 md:gap-5 h-full'>

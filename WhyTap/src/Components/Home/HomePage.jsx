@@ -3,7 +3,9 @@ import Banner from './HomeComponents/Banner'
 
 function HomePage() {
   return (
-    <div className='w-full h-full'><Banner /></div>
+    <div className='w-full pt-10'>
+      <Banner />
+      </div>
   )
 }
 
