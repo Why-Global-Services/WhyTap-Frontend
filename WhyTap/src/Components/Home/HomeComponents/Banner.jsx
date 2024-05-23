@@ -1,4 +1,5 @@
 import React from 'react'
+import SecondSection from './SecondSection'
 
 function Banner() {
   return (
@@ -10,6 +11,7 @@ function Banner() {
             </div>
 
         </div>
+        <SecondSection />
 
     </div>
   )

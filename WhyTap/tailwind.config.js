@@ -6,6 +6,9 @@ export default {
       colors:{
         'primary':'#861b47',
         'secondary':'#d63637'
+      },
+      screens:{
+        xs:"428px",
       }
     },
   },
