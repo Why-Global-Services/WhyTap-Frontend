@@ -1,8 +1,9 @@
 import React from 'react'
+import Banner from './HomeComponents/Banner'
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div className='w-full h-full'><Banner /></div>
   )
 }
 
