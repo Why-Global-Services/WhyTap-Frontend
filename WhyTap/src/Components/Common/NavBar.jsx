@@ -120,9 +120,9 @@ const NavBar = () => {
   }, []);
 
   return (
-    <>
+    <div className="w-full fixed z-20 h-10">
       {/* Topbar */}
-      <section className="bg-primary text-white w-full h-10 xl:px-24 px-8 hidden sm:flex items-center justify-between  z-30">
+      <section className="bg-primary text-white w-full h-full xl:px-24 px-8 hidden sm:flex items-center justify-between  z-30">
         <section className="flex gap-2 items-center justify-center ">
           <Link
             to="tel:+918270099991"
@@ -398,7 +398,7 @@ const NavBar = () => {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

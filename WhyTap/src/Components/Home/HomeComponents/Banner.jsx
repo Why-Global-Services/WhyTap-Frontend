@@ -1,12 +1,14 @@
 import React from 'react'
+import SecondSection from './SecondSection'
 
 function Banner() {
   return (
-    <div className='w-full bg-gray-100 h-screen p-5 lg:p-0'>
+    <div className='w-full bg-gray-100 h-screen relative  p-5 lg:p-0 '>
+<svg className='absolute bottom-0' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#861b47" fill-opacity="0.2" d="M0,288L80,266.7C160,245,320,203,480,202.7C640,203,800,245,960,256C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
         <div className='w-full h-full lg:flex-row justify-center items-center relative overflow-hidden flex-col flex'>
             <div className='lg:w-[45%]   relative w-full h-full'>
               <div className='lg:w-[80%] mx-auto flex flex-col justify-center items-center lg:items-start gap-14 sm:gap-8 md:gap-5 h-full'>
-                <p className='sm:text-xl text-lg text-primary lg:text-start text-center font-bold'>EMPOWERING STUDENTS , EMPOWERING INDIA</p>
+                <p className=' text-lg text-primary lg:text-start text-center font-bold'>EMPOWERING STUDENTS , EMPOWERING INDIA</p>
                 <p className='md:text-[36px] text-3xl font-semibold leading-normal lg:text-start text-center'>India's No:1 <span className='text-primary'>IT</span> Training Institute with <span className='text-primary'>100%</span> Job Assistance</p>
                  <p>Take your career to next level</p>
                  <button className='bg-primary px-6 rounded-md border-2 hover:text-primary transition-all border-primary hover:bg-transparent text-white  py-2'>Book Now</button>
