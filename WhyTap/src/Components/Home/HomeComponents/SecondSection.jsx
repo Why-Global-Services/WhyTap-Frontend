@@ -125,13 +125,9 @@ const SecondSection = () => {
         <h1 className="text-center text-3xl font-bold">Popular Courses</h1>
         <div className="flex flex-wrap gap-10 w-full justify-center  py-10">
           {Courses.map((item, index) => (
-            <div className="w-[350px] bg-white drop-shadow-md group py-7 ">
-              <div className="w-full px-7 overflow-hidden ">
-                <img
-                  src={item.image}
-                  alt=""
-                  className="w-full rounded-md duration-200 group-hover:scale-105"
-                />
+            <div className="w-[350px] h-[580px] relative bg-white drop-shadow-md group py-7 ">
+              <div className="mx-auto px-7 overflow-hidden rounded-md ">
+                <img src={item.image} alt="" className="w-full h-full rounded-md  duration-200 group-hover:scale-105" />
               </div>
               <div className="p-7">
                 <h1 className="text-2xl font-bold">{item.name}</h1>
@@ -151,10 +147,8 @@ const SecondSection = () => {
                 </p>
                 <p className="text-gray-500 mt-8">{item.content}</p>
               </div>
-              <div className="flex justify-center items-start px-7 ">
-                <button className="bg-[#861b47] text-white w-full group-hover:bg-yellow-300 h-10 rounded-md">
-                  Enroll Now
-                </button>
+              <div className="flex absolute bottom-5 w-full justify-center items-start px-7 ">
+                <button className="bg-[#861b47] text-white w-full transition-all duration-200 group-hover:bg-yellow-300 h-10 rounded-md">Enroll Now</button>
               </div>
             </div>
           ))}
