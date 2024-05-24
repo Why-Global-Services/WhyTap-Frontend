@@ -5,7 +5,8 @@ export default {
     extend: {
       colors:{
         'primary':'#861b47',
-        'secondary':'#d63637'
+        'secondary':'#d63637',
+        'yellowPrimary':'#FFC221'
       },
       screens:{
         xs:"428px",

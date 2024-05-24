@@ -178,7 +178,7 @@ const NavBar = () => {
 
       {/* Navbar */}
       <div className="z-30  w-full ">
-        <section className="bg-white  flex justify-between xl:px-20 lg:px-5 items-center p-4   drop-shadow-xl z-10  w-full top-0">
+        <section className="bg-white   flex justify-between xl:px-20 lg:px-5 items-center p-4   drop-shadow-xl z-10  w-full top-0">
           <Link to="/">
             <img src="./whytap-logo.png" alt="logo" className="w-28" />
           </Link>
@@ -188,7 +188,7 @@ const NavBar = () => {
               onMouseEnter={handleMouseEntercompany}
               onMouseLeave={handleMouseLeavecompany}
             >
-              <div>
+              <div className="">
                 <li className="hover:text-primary flex items-center">
                   Courses <RiArrowDropDownLine size={20} className="" />
                 </li>
@@ -206,7 +206,7 @@ const NavBar = () => {
               )}
             </div>
             <Link to="/aboutus">
-              <li className="hover:text-primary">About Us</li>
+              <li className="hover:text-primary I">About Us</li>
             </Link>
             <Link to="/placement">
               <li className="hover:text-primary">Placement</li>
@@ -248,8 +248,8 @@ const NavBar = () => {
         </section>
 
         {open && (
-          <div className="w-[65%] relative float-right todown lg:hidden">
-            <ul className="flex  flex-col justify-center pl-10 text-left  pr-4 bg-primary pb-5 pt-5 ">
+          <div  className="w-[65%] relative float-right todown lg:hidden">
+            <ul  className="flex font-semibold  flex-col justify-center pl-10 text-left  pr-4 bg-primary pb-5 pt-5 ">
               <div>
                 <li
                   className="bg-primary cursor-pointer p-2 text-white hover:bg-white hover:text-primary flex items-center gap-1"
@@ -268,7 +268,7 @@ const NavBar = () => {
               </div> */}
               <Link to="aboutus">
                 <li
-                  className="bg-primary p-2 text-white hover:bg-white hover:text-primary"
+                  className="bg-primary p-2  text-white hover:bg-white hover:text-primary"
                   onClick={toggleNavbar}
                 >
                   About Us

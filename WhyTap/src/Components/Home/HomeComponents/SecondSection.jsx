@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { FaCalendarDays } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
+import CountUp from 'react-countup';
 
 const SecondSection = () => {
   const logos = [
@@ -102,7 +103,25 @@ const SecondSection = () => {
         "Fast track your career with this PG Digital Marketing Program from WHY tap, trained by Industrial Professionals....",
     },
   ];
-  
+  const count = [
+    {
+      number:"17000",
+      name: "Students Trained",
+    },
+    {
+      number:"12000",
+      name: "Students Placed",
+    },
+    {
+      number: "130",
+      name: "Expert Trainers",
+    },
+    {
+      number: "10",
+      name: "Years of Experience",
+    },
+  ];
+
   return (
     <>
       {/* second section */}
@@ -127,7 +146,11 @@ const SecondSection = () => {
           {Courses.map((item, index) => (
             <div className="w-[350px] h-[580px] relative bg-white drop-shadow-md group py-7 ">
               <div className="mx-auto px-7 overflow-hidden rounded-md ">
-                <img src={item.image} alt="" className="w-full h-full rounded-md  duration-200 group-hover:scale-105" />
+                <img
+                  src={item.image}
+                  alt=""
+                  className="w-full h-full rounded-md  duration-200 group-hover:scale-105"
+                />
               </div>
               <div className="p-7">
                 <h1 className="text-2xl font-bold">{item.name}</h1>
@@ -148,7 +171,9 @@ const SecondSection = () => {
                 <p className="text-gray-500 mt-8">{item.content}</p>
               </div>
               <div className="flex absolute bottom-5 w-full justify-center items-start px-7 ">
-                <button className="bg-[#861b47] text-white w-full transition-all duration-200 group-hover:bg-yellow-300 h-10 rounded-md">Enroll Now</button>
+                <button className="bg-[#861b47] text-white w-full transition-all duration-200 group-hover:bg-yellow-300 h-10 rounded-md">
+                  Enroll Now
+                </button>
               </div>
             </div>
           ))}
@@ -161,7 +186,7 @@ const SecondSection = () => {
       </div>
 
       {/* fourth section */}
-      <div className="bg-gradient-to-b from-[#F9CD03] to-[#CBB341] sm:p-10 p-5 text-center">
+      <div className="bg-gradient-to-b from-[#F9CD03] to-[#CBB341] sm:p-10 p-5 mb-10 text-center">
         <h1 className="md:text-3xl sm:text-xl text-base font-bold">
           100% Job Placement Support & Interview Preparation
         </h1>
@@ -170,7 +195,27 @@ const SecondSection = () => {
         </h3>
       </div>
 
-      {/* fifth section */}
+      {/* countup section */}
+      <div>
+        <div className="bg-gradient-to-b from-primary to-[#d63637] md:p-10 p-5">
+          <h1 className="text-center sm:text-3xl text-lg font-bold text-white">
+            Get Best Training from Industrial Experts
+          </h1>
+          <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1   gap-5 md:p-10 p-5">
+            {count.map((item, index) => (
+              <div className="bg-gradient-to-t from-[#ddd] to-white  rounded-md p-5 space-y-4 py-7">
+                <div className="flex text-primary font-semibold text-3xl">
+                  <CountUp end={item.number} duration={5} enableScrollSpy/>
+                  <p>+</p>
+                </div>
+                <div className="font-bold">
+                  {item.name}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </>
   );
 };
