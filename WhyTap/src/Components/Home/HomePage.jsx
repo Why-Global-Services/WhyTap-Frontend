@@ -5,6 +5,7 @@ import WhoWillTrain from './HomeComponents/WhoWillTrain'
 import Demo from './HomeComponents/Demo'
 import Contact from './HomeComponents/Contact'
 import { Sliders } from './HomeComponents/Slider'
+import Countup from './HomeComponents/Countup'
 
 
 function HomePage() {
@@ -14,6 +15,7 @@ function HomePage() {
       <Banner />
       <SecondSection />
       <Sliders />
+      <Countup />
       <WhoWillTrain />
       <Demo />
       <Contact />
