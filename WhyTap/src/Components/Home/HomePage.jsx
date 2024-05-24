@@ -4,6 +4,8 @@ import SecondSection from './HomeComponents/SecondSection'
 import WhoWillTrain from './HomeComponents/WhoWillTrain'
 import Demo from './HomeComponents/Demo'
 import Contact from './HomeComponents/Contact'
+import { Sliders } from './HomeComponents/Slider'
+
 
 function HomePage() {
   return (
@@ -11,6 +13,7 @@ function HomePage() {
       <div className='w-full h-6'></div>
       <Banner />
       <SecondSection />
+      <Sliders />
       <WhoWillTrain />
       <Demo />
       <Contact />
