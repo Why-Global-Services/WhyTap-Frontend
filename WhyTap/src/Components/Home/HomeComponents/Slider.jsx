@@ -20,7 +20,7 @@ export const Sliders = () => {
       
 
   return (
-    <article className='flex md:flex-row flex-col w-[95%] mx-auto'>
+    <article className='flex md:flex-row flex-col lg:w-[90%] w-[95%] mx-auto my-10'>
         <section className='bg-primary text-white md:w-[25%] p-5 space-y-5 flex flex-col justify-center items-start'>
             <h2 className='lg:text-2xl text-lg font-bold'>People Say About WHY tap</h2>
             <p className='text-sm font-thin text-justify'>One-stop solution for any IT training Course. People love WHY tap because they can create and grow their career with ease here.</p>
@@ -74,11 +74,6 @@ export const Sliders = () => {
             </div>
             </div>
         </section>
-       
-       
-       
-        
-        
         </Slider>
         </section>
     </article>
