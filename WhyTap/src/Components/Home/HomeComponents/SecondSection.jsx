@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { FaCalendarDays } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
-import CountUp from 'react-countup';
+
 
 const SecondSection = () => {
   const logos = [
@@ -194,28 +194,7 @@ const SecondSection = () => {
           Hurry!! Give a kick-start for your sparking future!
         </h3>
       </div>
-
-      {/* countup section */}
-      <div>
-        <div className="bg-gradient-to-b from-primary to-[#d63637] md:p-10 p-5">
-          <h1 className="text-center sm:text-3xl text-lg font-bold text-white">
-            Get Best Training from Industrial Experts
-          </h1>
-          <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1   gap-5 md:p-10 p-5">
-            {count.map((item, index) => (
-              <div className="bg-gradient-to-t from-[#ddd] to-white  rounded-md p-5 space-y-4 py-7">
-                <div className="flex text-primary font-semibold text-3xl">
-                  <CountUp end={item.number} duration={5} enableScrollSpy/>
-                  <p>+</p>
-                </div>
-                <div className="font-bold">
-                  {item.name}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      
     </>
   );
 };
