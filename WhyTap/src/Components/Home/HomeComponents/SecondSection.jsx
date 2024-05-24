@@ -102,6 +102,7 @@ const SecondSection = () => {
         "Fast track your career with this PG Digital Marketing Program from WHY tap, trained by Industrial Professionals....",
     },
   ];
+  
   return (
     <>
       {/* second section */}
@@ -126,7 +127,11 @@ const SecondSection = () => {
           {Courses.map((item, index) => (
             <div className="w-[350px] bg-white drop-shadow-md group py-7 ">
               <div className="w-full px-7 overflow-hidden ">
-                <img src={item.image} alt="" className="w-full rounded-md duration-200 group-hover:scale-105" />
+                <img
+                  src={item.image}
+                  alt=""
+                  className="w-full rounded-md duration-200 group-hover:scale-105"
+                />
               </div>
               <div className="p-7">
                 <h1 className="text-2xl font-bold">{item.name}</h1>
@@ -136,17 +141,42 @@ const SecondSection = () => {
                 </p>
                 <p className="text-gray-500 flex items-center gap-3">
                   {item.rating}
-                  <span className="text-orange-400 flex items-center"><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></span>
+                  <span className="text-orange-400 flex items-center">
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                  </span>
                 </p>
                 <p className="text-gray-500 mt-8">{item.content}</p>
               </div>
               <div className="flex justify-center items-start px-7 ">
-                <button className="bg-[#861b47] text-white w-full group-hover:bg-yellow-300 h-10 rounded-md">Enroll Now</button>
+                <button className="bg-[#861b47] text-white w-full group-hover:bg-yellow-300 h-10 rounded-md">
+                  Enroll Now
+                </button>
               </div>
             </div>
           ))}
         </div>
+        <div className="flex flex-col justify-center items-center pb-10">
+          <button className="bg-primary text-white w-40 h-10 rounded-md duration-200 hover:bg-yellow-300 hover:text-black">
+            View All Courses
+          </button>
+        </div>
       </div>
+
+      {/* fourth section */}
+      <div className="bg-gradient-to-b from-[#F9CD03] to-[#CBB341] sm:p-10 p-5 text-center">
+        <h1 className="md:text-3xl sm:text-xl text-base font-bold">
+          100% Job Placement Support & Interview Preparation
+        </h1>
+        <h3 className="md:text-xl sm:text-base text-xs font-bold">
+          Hurry!! Give a kick-start for your sparking future!
+        </h3>
+      </div>
+
+      {/* fifth section */}
     </>
   );
 };
